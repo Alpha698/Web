@@ -1,0 +1,36 @@
+   body{
+    background-color:#C0C0C0;
+   }
+   
+   H1{
+   	text-align:  center;
+   }
+
+   p{
+   	text-indent: 2em;
+   }
+
+   .first{
+   	font-family: Arial;
+	font-size: 14pt;
+	font-style: italic;
+   }
+
+   .second{
+   	font-family: Tahoma;
+	font-size: 1.5em;
+	text-align: justify;
+	font-weight: bold;
+	text-transform: uppercase;
+   }
+
+   .third{
+   	font-family: Tahoma;
+	font-size: 1.5em;
+	color: green;
+	line-height: 1.5;
+   }
+
+   .first:first-line,.second:first-line{
+	text-decoration: underline;
+   }

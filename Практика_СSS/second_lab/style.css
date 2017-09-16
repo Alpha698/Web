@@ -1,0 +1,27 @@
+   body{
+      text-align:  center;
+   }
+   
+   p{
+   	border-width:1px; 
+      border-style:solid; 
+      border-color:black;
+   }
+
+   .first{                 
+   	padding: 2em;
+   }
+
+   .second{
+   	margin: 30px 0px 0px 30px;       
+   }
+
+   .third{
+   	width: 50%;
+   }
+
+   .fourth{
+      width: 400px;
+   }
+
+   

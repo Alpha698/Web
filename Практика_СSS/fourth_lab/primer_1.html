@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Табличная верстка</title>
+	<style type="text/css">
+		body {margin: 0;text-align:center}
+		#main {margin: 0 auto;width:860;border-collapse:collapse;}
+		.header {height:60px; background-color:#717dc9; padding:20px; text-align:center}
+		.left_col {width:120px; height:460px; background-color:#dddddd; padding:15px; vertical-align:top}
+		.center_col {background-color:#ffffff; padding:15px; width:500px; vertical-align:top}
+		.right_col {width:120px; background-color:#dddddd; padding:15px; vertical-align:top}
+		.footer {padding:10px 0 10px 20px; background-color:#717dc9; font-size:13px}
+	</style>
+</head>
+
+<body>
+	<table id="main">
+		<tr>
+			<td colspan="3" class="header">Мой сайт</td>
+		</tr>
+		<tr>
+			<td class="left_col">Меню</td>
+			<td class="center_col">Содержание</td>
+			<td class="right_col">Ссылки</td>
+		</tr>
+		<tr>
+			<td colspan="3" class="footer">© 2012</td>
+		</tr>
+	</table>
+</body>
+</html>
