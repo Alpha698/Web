@@ -1,0 +1,38 @@
+<!--
+19. Ввести в текстовое поле массив чисел. Преобразовать введенную строку в  массив. Отсортировать массив по возрастанию.  Вывести элементы отсортированного массива в окне браузера.
+-->
+<html>
+<head>
+  	<meta charset="utf-8">
+
+	<title>5</title>
+</head>
+<body>
+<div>
+	<p><b>Лабораторная_№5</b></p>
+
+</div>
+<input type="text" id="txt"/>
+<input type="button" id="btn" onclick="someFunc()" value="Жмакни меня">
+
+<script>
+function someFunc(){
+var new_arr = document.getElementById("txt").value.split(',');
+//3,15.3,8,7 8,6,1
+ // Переменная в качестве индекса для массива new_arr
+new_arr = new_arr.sort();
+var k = 0;
+    for(var j = 1; j <= 6; j++){
+                  //Вывод текущего значения массива
+        document.write(new_arr[k] + ' ');
+       
+         //Инкрементирование индекса, массива new_arr
+        k++;
+}
+
+}
+document.getElementById("btn").onclick = someFunc;
+</script>
+</body>
+</html>
+
