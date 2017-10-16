@@ -1,0 +1,83 @@
+<!--
+5. Создайте html-документ с формой, содержащей элементы:
+- список (например, дней недели);
+- кнопки “Отправить” и “Очистить”.
+Введенные данные формы передать PHP-скрипту, который выводит переданные параметры в окне браузера.
+
+6. Создайте html-документ с формой, содержащей элементы:
+- список с возможностью множественного выбора;
+- кнопки “Отправить” и “Очистить”.
+Введенные данные формы передать PHP-скрипту, который выводит переданные параметры в окне браузера.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" >
+	<script type="text/javascript">
+
+	function doClear(){
+		if(confirm('Очистить поля формы?'))
+		document.fm.reset()
+	}
+
+	</script>
+</head>
+<body>
+<div>
+	<form name="fm" action="pere.php" method="GET" > <!--в новом окне target="_blank"-->
+	<fieldset>
+
+		Список:
+<select name="name_list">
+  			<option value="Понедельник">Понедельник</option>
+  			<option value="Вторник">Вторник</option>
+  			<option value="Среда">Среда</option>
+  			<option value="Четверг">Четверг</option>
+  			<option value="Пятница">Пятница</option>
+  			<option value="Субота">Субота</option>
+  			<option value="Воскресенье">Воскресенье</option>
+</select>
+		
+		<br>
+
+		Список с возможностью множественного выбора:
+		<select multiple size="3" name="test[]" required>
+  			<option value="Киев">Киев</option>
+  			<option value="Харьков">Харьков</option>
+  			<option value="Одесса">Одесса</option>
+  			<option value="Львов">Львов</option>
+  			<option value="Днепропетровск">Днепропетровск</option>
+		</select>
+		<br><br>
+	</fieldset>
+
+		<dir id="kno">
+			<input type="submit" value="Отправить" onClick="" name="myActionName" >
+			<input type="button" id="clear" value="Очистить" onClick="doClear()"><br>
+
+		</dir>
+	</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+	$hello = 'Привет, мир!';
+    require_once('forma.html');
+
+    	<div>Переменная из php:
+            <span><?php echo $hello; ?></span>
+       </div>-->

@@ -1,0 +1,51 @@
+<!--
+3. Создайте html-документ с формой, содержащей элементы:
+- три переключателя (тег <checkbox>) с подписями “Вариант 1”, “Вариант 2”, “Вариант 3”;
+- текстовая область для ввода комментария (тег <textarea>);
+- кнопки “Отправить” и “Очистить”.
+Введенные данные формы передать PHP-скрипту, который выводит переданные параметры в окне браузера.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" >
+	<script type="text/javascript">
+
+	function doClear(){
+		if(confirm('Очистить поля формы?'))
+		document.fm.reset()
+	}
+
+	</script>
+</head>
+<body>
+<div>
+	<form name="fm" action="pere.php" method="GET" >
+	<fieldset>
+	<input type="checkbox" name="option1" value="Вариант 1" checked>Вариант 1<Br>
+    <input type="checkbox" name="option2" value="Вариант 2">Вариант 2<Br>
+    <input type="checkbox" name="option3" value="Вариант 3">Вариант 3<Br>
+    <textarea rows="10" cols="45" name="text"></textarea> 
+		<!--<legend>Форма регистрации</legend>
+		Ваш пол:<br>
+		<input type="radio" name="sex" value="мужской" required>мужской<br>
+		<input type="radio" name="sex" value="женский" required>женский<br><br>
+		Город: 
+		<select multiple="multiple" size="2" name="test[]" required>
+  			<option value="Киев">Киев</option>
+  			<option value="Харьков">Харьков</option>
+  			<option value="Одесса">Одесса</option>
+  			<option value="Львов">Львов</option>
+		</select>
+		<br><br>-->
+	</fieldset>
+		<dir id="kno">
+			<input type="submit" value="Отправить" onClick="" name="myActionName" >
+			<input type="button" id="clear" value="Очистить" onClick="doClear()"><br>
+		</dir>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!--
+4. Создайте html-документ с формой, содержащей элементы:
+- радио-кнопки с подписями “Internet Explorer”, “Opera”, “Mozilla Firefox”, “Google Chrome”, “Safari”;
+- кнопки “Отправить” и “Очистить”.
+Введенные данные формы передать PHP-скрипту, который выводит переданные параметры в окне браузера.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" >
+	<script type="text/javascript">
+
+	function doClear(){
+		if(confirm('Очистить поля формы?'))
+		document.fm.reset()
+	}
+
+	</script>
+</head>
+<body>
+<div>
+	<form name="fm" action="pere.php" method="GET" > <!--в новом окне target="_blank"-->
+	<fieldset>
+		<input type="radio" name="bra1" value="Internet Explorer">Internet Explorer<br>
+		<input type="radio" name="bra1" value="Opera">Opera<br>
+		<input type="radio" name="bra1" value="Mozilla Firefox">Mozilla Firefox<br>
+		<input type="radio" name="bra1" value="Google Chrome">Google Chrome<br>
+		<input type="radio" name="bra1" value="Safari">Safari<br>
+		<!--<legend>Форма регистрации</legend>-->
+		<!--		
+		Город: 
+		<select multiple="multiple" size="2" name="test[]" required>
+  			<option value="Киев">Киев</option>
+  			<option value="Харьков">Харьков</option>
+  			<option value="Одесса">Одесса</option>
+  			<option value="Львов">Львов</option>
+		</select>
+		<br><br>-->
+	</fieldset>
+
+		<dir id="kno">
+			<input type="submit" value="Отправить" onClick="" name="myActionName" >
+			<input type="button" id="clear" value="Очистить" onClick="doClear()"><br>
+
+		</dir>
+	</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+	$hello = 'Привет, мир!';
+    require_once('forma.html');
+
+    	<div>Переменная из php:
+            <span><?php echo $hello; ?></span>
+       </div>-->
