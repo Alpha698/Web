@@ -1,5 +1,0 @@
-1.NoSQLMap
-2.Ghost Phisher
-3.Nmap
-4.SSLsplit
-5.Wifite
