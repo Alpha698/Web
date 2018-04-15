@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<!-- Подключение JS и CSS ядра Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+    <script src="assets/js/jquery.min.js"></script>
+<!-- Прочие стили -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+<!-- Стиль вкладки-->
+	<link rel="shortcut icon" href="assets/img/logo/Flat_logo_on_transparent_161x73ico.png">
+	<title>Shypkov_Vladyslav</title>
+<!-- Стили шрифтов -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+	
+	<!-- ========== Скрипт для расчета задания варианта ========== -->
+<script type="text/javascript">
+//wef o wefwelff po wefpwef ndspofvfvp pevog po
+
+
+ function countWords(textarea,temp1) { 
+ 	window.temp1 = textarea.value;
+
+}
+
+//var expr = new RegExp(""+vto+"" /g);
+//var zap = /is /g;
+//window.count1 = (temp1.match(expr) || []).length;
+
+
+//alert(temp1.match(new RegExp(/ /g, vto)));
+
+//String.prototype.RE = function() {
+//    return this.replace(/([\$\^\*\(\)\+\[\]\{\}\|\.\/\?\\])/g, '\\$1');
+//};
+//...
+//var re = new RegExp("^" + fcity.value.RE() + "$","i");
+
+//alert(count1);
+
+//str = "За информацией обратитесь: Глава 3.4.5.1, Глава 7.5";
+//re = /глава (\d+(\.\d)*)/ig
+//found = str.match(re)
+//alert(found)
+
+//var r='\\w{4}';
+//var s='privet';
+//alert(s.match(r));
+
+
+	function OnLoad(){
+
+var vto = document.getElementById("p2").value;
+
+//	var our_string = temp1;	
+//	var sy=0;
+//цикл
+//for
+//if(our_string.indexOf(" "+vto+" ") + 1) {  //ne sovsem tak, esli pervoe i poslednee
+ //  alert("подстрока найдена");
+  // sy = sy + 1;
+//}else{
+//   alert("подстрока не найдена");
+//}
+//document.getElementById("p3").value = sy;
+
+//alert(temp1);
+//alert(vto);
+
+var str = temp1;
+var count = 0;
+var pos = str.indexOf(" "+vto+" ");
+
+while (pos !== -1) {
+  count++;
+  pos = str.indexOf(" "+vto+" ", pos + 1);
+}
+
+document.getElementById("p3").value = count;
+
+}
+
+	function doClear(){
+		if(confirm('Вы уверены что хотите отменить?'))
+		document.fm.reset()
+	}
+
+</script>
+
+  </head>
+
+<body data-target="#theMenu" >
+<!-- Меню <span class="icon icon-eye"></span><i class="icon-remove menu-close"></i>-->
+    <nav class="menu" id="theMenu" >
+        <div class="menu-wrap">
+            <h1 class="logo"><a href="index.html">Shypkov Vladyslav</a></h1>
+            <i class="menu-close"></i>
+            <a href="index.html" class="smoothScroll"><span class="icon icon-home"></span> &nbsp; Home</a>
+            <a href="About_Me.html" class="smoothScroll"><span class="icon icon-file"></span> &nbsp; About Me</a>
+            <!-- веб-дизайнер, разработчик и игровой наркоман THE SKILLS href="#contact"-->
+            <a href="Cover.html" class="smoothScroll"><span class="icon icon-camera"></span> &nbsp; COVER LETTER</a>
+            <a href="favorite.html" class="smoothScroll"><span class="icon icon-star"></span> &nbsp; favorite</a><!-- MY BUNKER -->
+            <a href="login.php" class="smoothScroll"><span class="icon icon-user"></span> &nbsp; Personalization</a>
+            <a href="javascript.html" class="smoothScroll"><span class="icon icon-bookmarks"></span> &nbsp; JavaScript</a>
+            <a href="intropage.php" class="smoothScroll"><span class="icon icon-bookmarks"></span> &nbsp; PHP</a>
+            <a href="https://www.facebook.com/profile.php?id=100012252974050&fref=nf"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="https://my.mail.ru/mail/tsef47/"><i class="icon icon-envelop"></i></a>
+            <a href="https://github.com/Alpha698"><i class="icon-github"></i></a>
+        </div>
+        
+<!-- Кнопка меню -->
+        <div id="menuToggle"><span class="icon icon-menu"></span></div>
+    </nav>
+
+<!-- ========== Верхняя секция ========== -->
+<section id="home" name="home"></section>
+<div id="headerwrap2">
+    <div class="container">
+        <!-- Логотип -->
+        <div class="logo">
+            <!--<img src="assets/img/logo.png">-->
+        </div>
+        <br>
+        <!-- Заголовок <font color="#00FFFF">O</font>-->
+        <div class="row">
+            <h1> <font color="White">Shypkov Vladyslav</font></h1>
+            <br>
+            <h3 style="color:White;">Web App Developer / Разработчик веб-приложений</h3>
+            <br>
+            <br>
+            <div class="col-lg-6 col-lg-offset-3">
+            </div>
+        </div>
+    </div><!-- /container -->
+</div><!-- /headerwrap -->
+
+
+	<!-- ========== Секция "про" ========== -->
+	<section id="about" name="about"></section>
+	<div id="fi">
+		<div class="container">
+			<div class="row">
+				<h3>Задание по JavaScript для курсового проекта</h3>
+				<p class="centered">
+					<i class="icon icon-circle"></i>
+				</p>
+<!-- Общая информация-->
+				<div class="col-lg-10 col-lg-offset-1" >
+					<p class="p1">19.	Создать сценарий, который будет подсчитывать, сколько раз заданное слово встречается в введенном тексте. Форма включает два поля ввода (textarea и text) для ввода текста и слова. Форма содержит также две кнопки “Подсчитать” и  “Отменить”. Результат выводится в текстовое поле с подписью “Количество слов в тексте”.
+					</p>
+					<p class="p1">
+
+						<form name="fm" action="pere.php" method="GET" >
+						<fieldset>
+						<legend>Форма ввода и вывода данных</legend>
+						Введите текст:&nbsp;&nbsp;<textarea id="p1" rows="6" cols="75" name="text" placeholder="Ваш текст" onchange="countWords(this)" required>
+						</textarea><br><br>
+						Введите слово:&nbsp;&nbsp;<input id="p2" type="text" name="name" placeholder="Ваше слово" required><br>
+						<br><br>
+						</fieldset>
+						<dir id="kno">
+							<input type="button" value="Подсчитать" onclick="OnLoad()">
+							<input type="button" id="clear" value="Отменить" onClick="doClear()"><br>
+						</dir>
+						Количество слов в тексте:&nbsp;&nbsp;<input id="p3" type="text" placeholder="Кол-во"><br>
+						</form>
+
+					</p>
+				</div>
+			</div><hr><br><br>
+		</div><!-- /container -->
+    
+<script type="text/javascript">
+jQuery(document).ready(function($){
+ $('<style>'+
+ '.scrollTop{ z-index:9999; position:fixed;'+
+ 'bottom:20px; left:92%; width:50px; height:50px;'+
+ 'background:url(assets/img/top.png) 0 0 no-repeat; }' +
+ '.scrollTop:hover{ background-position:0 -50px;}'
+ +'</style>').appendTo('body');
+ var speed = 550,
+ $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');
+ $scrollTop.click(function(e){
+ e.preventDefault();
+ $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+ });
+
+ //появление
+ function show_scrollTop(){
+ ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+ }
+ $(window).scroll( function(){ show_scrollTop(); } );
+ show_scrollTop();
+});
+</script>
+
+<script src="assets/js/main.js"></script>
+
+    <!-- Footer -->
+        <footer id="footer">
+            <span class="copyright">Copyright © 2017 - Developer by 
+                <a href="https://my.mail.ru/mail/tsef47/">Shypkov Vladyslav</a>. All Rights Reserved.
+            </span>
+        </footer>
+</div><!-- /f -->
+
+</body>
+</html>

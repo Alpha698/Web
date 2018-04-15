@@ -1,0 +1,460 @@
+body {
+  	background-color: #f2f2f2;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Параграф и Типография */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered2 {
+    text-align: left;
+}
+
+/* Ссылки */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Внешние разделы
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/What-is-keeping-up-executives-at-night-Cyber-Security-1500x1001.jpg) no-repeat center top;
+	margin-top: -1%;
+	padding-top:1%;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1,#headerwrap1 h1,#headerwrap2 h1 {
+	margin-top: 150px;
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+#headerwrap h3,#headerwrap1 h3,#headerwrap2 h3 {
+	color: white;
+	font-size: 30px;
+	font-weight: 100;
+    font-family: 'Times', serif;
+    /* Курсив */font-style: oblique;
+}
+
+#headerwrap .logo,#headerwrap1 .logo,#headerwrap2 .logo {
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+
+#headerwrap1 {
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -1%;
+	padding-top:1%;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#headerwrap2 {
+	background: url(../img/dfwefipnwef_edited.jpg) no-repeat center top;
+	margin-top: -1%;
+	padding-top:1%;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/* Подвал */
+
+#fi {
+	background: #1a1a1a;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+#fi h3 {
+	color: white;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 1px;	
+}
+
+#fi i {
+	font-size: 8px;
+	color: #fff;
+    padding: 3px;
+}
+/* Шрифт в блоках */
+#fi p {
+	font-size: 18px;
+	color: #f2f2f2;
+}
+
+#fi .p1 {
+	text-indent: 3%; /* Отступ первой строки */
+	font-size: 18px;
+	color: #f2f2f2;
+	text-align: justify;
+}
+
+#fi img {
+	text-align: center;
+}
+
+
+/* Меню */
+
+.menu {
+	position: fixed;
+	right: -200px;
+	width: 260px;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	text-align: left;
+}
+
+.menu.menu-open {
+	right: 0px;
+}
+/* основа и цвет*/
+.menu-wrap {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	background: #232420;
+	width: 200px;
+	height: 100%;
+}
+
+.menu h1.logo a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.menu h1.logo a:hover {
+	color: #f85c37;
+}
+
+.menu img.logo {
+	margin: 20px 0;
+	max-width: 160px;
+}
+
+.menu a {
+	margin-left: 20px;
+	color: #ffffff;/* #808080 */
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.menu a:hover {
+	color: #f85c37;/* #ffffff */
+}
+
+.menu a:active {
+	color: #f85c37;/* #ffffff */
+}
+
+.menu a > i {
+	float: left;
+	display: inline-block;
+	vertical-align: middle; 
+	text-align: left;
+	width: 25px;
+	font-size: 14px;
+	line-height: 40px;
+	margin: 25px 2px;
+}
+
+.menu-close {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	color: #808080;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	top: 20px;
+	right: 5px;
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+.menu-close:hover {
+	color: #ffffff;
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+/* Выпадающие меню из кнопкиtheMenu */
+.body-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.body-push-toright {
+	left: 200px;
+}
+
+.body-push-toleft {
+	left: -200px;
+}
+
+.menu,
+.body-push {
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+
+#menuToggle {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.25);
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+#menuToggle:hover {
+	color: #f85c37;
+	background: rgba(0,0,0,0.2);
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+
+
+
+#greywrap .icon {
+	font-size: 60px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+/* ТЕКСТ в блоках */
+.row {
+	    font-family: Georgia;
+margin-right: 0px;
+margin-left: -15px;
+}
+
+
+.bw {	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+
+}
+
+.bw:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
+}
+
+/* Section Dividers Вставки картинок разрывов*/
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 450px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-top: 45px;
+
+
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+    
+    text-align: center;
+}
+
+.textdivider h1 {
+	padding-top: 70px;
+	color: white;
+	font-size: 40px;
+}
+
+.textdivider p {
+	color: white;
+	font-size: 25px;
+}
+
+/* Section Dividers Backgrounds */
+
+.divider1 {
+	background-image: url('../img/blue_mac2.jpg')
+}
+
+.divider2 {
+	background-image: url('../img/bg/apple-desktop-pc-wallpaper2.jpg')
+}
+
+.divider3 {
+	background-image: url('../img/bg/divider3.jpg');
+	margin-top: 0px;
+}
+
+.divider4 {
+	background-image: url('../img/imac_apple_kompyuter_stol_chashka_bloknot_109176_4066x2287.jpg');
+	margin-top: 0px;
+
+}
+.divider4 h1{
+	color: #f85c37;
+}
+.container p{
+	color: #f85c37;
+}
+/*  КРУГИ */
